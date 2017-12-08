@@ -3,7 +3,7 @@ import React from 'react' ;
 
 //key and value is string datatype  
 
-insertSingleRow = async (key , value) =>{
+insertSingleRow = async (key , value) => {
     try {
         await AsyncStorage.setItem( key , value )
         return "sucess"
@@ -12,7 +12,7 @@ insertSingleRow = async (key , value) =>{
     }
 }
 
-selectSingleRow =  async (Key)=>{
+selectSingleRow =  async (Key) => {
     try {
         const value = await AsyncStorage.getItem(Key)
         if (value !== null){
@@ -24,7 +24,7 @@ selectSingleRow =  async (Key)=>{
     }
 }
 
-updateRow = async ()=>{
+updateRow = async () => {
     let UID123_object = {
         name: 'Chris',
         age: 30,
